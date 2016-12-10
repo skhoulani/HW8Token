@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--
+Samir Khoulani
+Samir_khoulani@student.uml.edu
+12/09/16
+HW8 Token
+The purpose of this website is to create a tab-able multiplication table.
+-->
+<html lang="en">
+
+    <head>
+
+        <title>Multiplication Table - HW8</title>
+
+        <meta charset="utf-8">
+
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+        <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+
+    </head>
+
+    <body>
+
+        <header>Samir's Tabbed Multiplication Table - HW8</header>
+
+        <p> Please enter four positive numbers. Decimal numbers will always be rounded down to the nearest whole number. </p>
+
+        <form id="form">
+            <input type="text" id="horbegin" name="horbegin" placeholder="Horizontal Begin" class="required" value="1">
+            <input type="range" id="range1" min="0" max="10" value="1" />
+            <br>
+
+            <input type="text" id="horend" name="horend" placeholder="Horizontal End" class="required" value="10" >
+            <input type="range" id="range2" min="0" max="10" value="10" />
+            <br>
+
+            <input type="text" id="vertbegin" name="vertbegin" placeholder="Vertical Begin" class="required" value="1">
+            <input type="range" id="range3" min="0" max="10" value="1" />
+            <br>
+
+            <input type="text" id="vertend" name="vertend" placeholder="Vertical End" class="required" value="10" >
+            <input type="range" id="range4" min="0" max="10" value="10" />
+            <br>
+
+            <br>
+            <input type="button" id="submitTable" value="Submit">
+	        <input type="button" id="deleteTables" value="Delete All">
+
+        </form>
+
+        <br>
+
+        <div id="tabs"><ul></ul> <div>
+
+        <br>
+
+        <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
+        <script src="script.js"></script>
+
+    </body>
+
+</html>
